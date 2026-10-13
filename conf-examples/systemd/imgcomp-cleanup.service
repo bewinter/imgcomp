@@ -1,0 +1,11 @@
+[Unit]
+Description=Regular cleanup job of imgcomp
+
+[Service]
+Type=oneshot
+User=USER-CHANGEME
+Group=GROUP-CHANGEME
+WorkingDirectory=/home/USER-CHANGEME
+ExecStart=/home/USER-CHANGEME/imgcomp-remove_old_images.sh /home/USER-CHANGEME/images
+Restart=no
+

@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for imgcomp cleanup
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
